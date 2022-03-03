@@ -1,6 +1,6 @@
-# codesandbox-nuxt
+# vuetify-nuxt-starter
 
-> Nuxt starter for CodeSandBox (used for https://template.nuxtjs.org)
+> Vuetify Nuxt starter
 
 ## Build Setup
 
