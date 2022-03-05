@@ -13,20 +13,34 @@ export default {
     return {
       options: {
         scales: {
-          yAxes: [
+          xAxes: [
             {
+              display: true,
+              time: {
+                unit: "date"
+              },
               ticks: {
-                beginAtZero: true
+                maxTicksLimit: 10
               },
               gridLines: {
-                display: true
+                color: "rgba(0, 0, 0, 0)"
               }
             }
           ],
-          xAxes: [
+          yAxes: [
             {
+              display: true,
+              ticks: {
+                beginAtZero: true,
+                max: 150000,
+                suggestedMax: 150000,
+                min: 0,
+                suggestedMin: 0,
+                stepSize: 25000,
+                maxTicksLimit: 11
+              },
               gridLines: {
-                display: false
+                color: "rgba(0, 0, 0, 0)"
               }
             }
           ]

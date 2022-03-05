@@ -30,7 +30,10 @@ export default {
                 unit: "date"
               },
               ticks: {
-                maxTicksLimit: 10
+                maxTicksLimit: 24
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)"
               }
             }
           ],
@@ -43,8 +46,11 @@ export default {
                 suggestedMax: 150000,
                 min: 0,
                 suggestedMin: 0,
-                stepSize: 1000,
-                maxTicksLimit: 11
+                stepSize: 25000,
+                maxTicksLimit: 10
+              },
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)"
               }
             }
           ]
@@ -55,21 +61,6 @@ export default {
         },
         legend: {
           display: false
-        },
-        tooltips: {
-          backgroundColor: "rgb(255,255,255)",
-          bodyFontColor: "#858796",
-          titleMarginBottom: 10,
-          titleFontColor: "#6e707e",
-          titleFontSize: 14,
-          borderColor: "#dddfeb",
-          borderWidth: 1,
-          xPadding: 15,
-          yPadding: 15,
-          displayColors: false,
-          intersect: false,
-          mode: "index",
-          caretPadding: 10
         }
       }
     };

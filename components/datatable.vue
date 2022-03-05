@@ -10,7 +10,7 @@
         <v-toolbar-title>CRUD</v-toolbar-title>
         <v-divider class="mx-4" inset vertical></v-divider>
         <v-spacer></v-spacer>
-        <v-dialog v-model="dialog" max-width="500px">
+        <v-dialog v-model="dialog" max-width="1000px">
           <template v-slot:activator="{ on, attrs }">
             <v-btn color="primary" dark class="mb-2" v-bind="attrs" v-on="on">
               New Item
@@ -22,40 +22,40 @@
             </v-card-title>
 
             <v-card-text>
-              <v-container>
-                <v-row>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field
-                      v-model="editedItem.name"
-                      label="Nombre"
-                    ></v-text-field>
-                  </v-col>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field
-                      v-model="editedItem.apellido"
-                      label="Apellido"
-                    ></v-text-field>
-                  </v-col>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field
-                      v-model="editedItem.correo"
-                      label="Correo"
-                    ></v-text-field>
-                  </v-col>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field
-                      v-model="editedItem.ingresos"
-                      label="Ingresos"
-                    ></v-text-field>
-                  </v-col>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field
-                      v-model="editedItem.protein"
-                      label="Protein (g)"
-                    ></v-text-field>
-                  </v-col>
-                </v-row>
-              </v-container>
+              <v-row>
+                <v-col cols="12" sm="6" md="4">
+                  <v-text-field
+                    v-model="editedItem.name"
+                    label="Nombre"
+                  ></v-text-field>
+                </v-col>
+                <v-col cols="12" sm="6" md="4">
+                  <v-text-field
+                    v-model="editedItem.apellido"
+                    label="Apellido"
+                  ></v-text-field>
+                </v-col>
+                <v-col cols="12" sm="6" md="4">
+                  <v-text-field
+                    v-model="editedItem.correo"
+                    label="Correo"
+                  ></v-text-field>
+                </v-col>
+                <v-col cols="12" sm="6" md="4">
+                  <v-text-field
+                    v-model="editedItem.ingresos"
+                    label="Ingresos"
+                  ></v-text-field>
+                </v-col>
+                <v-col cols="12" sm="6" md="4">
+                  <v-select
+                    v-if="editedIndex != -1"
+                    :items="['Si', 'No']"
+                    label="Activo"
+                    v-model="editedItem.activo"
+                  ></v-select>
+                </v-col>
+              </v-row>
             </v-card-text>
 
             <v-card-actions>
@@ -129,14 +129,14 @@ export default {
       apellido: 0,
       correo: 0,
       ingresos: 0,
-      activo: 1
+      activo: "Si"
     },
     defaultItem: {
       name: "",
       apellido: 0,
       correo: 0,
       ingresos: 0,
-      activo: 1
+      activo: "Si"
     }
   }),
 
@@ -163,11 +163,25 @@ export default {
     initialize() {
       this.user = [
         {
-          name: "Anthony",
-          apellido: "Sakamoto",
-          correo: "anthon@correo.com",
+          name: "Anthony1",
+          apellido: "Sakamoto1",
+          correo: "anthony1@correo.com",
           ingresos: 4500,
-          activo: 1
+          activo: "Si"
+        },
+        {
+          name: "Anthony2",
+          apellido: "Sakamoto2",
+          correo: "anthony2@correo.com",
+          ingresos: 78500,
+          activo: "No"
+        },
+        {
+          name: "Anthony3",
+          apellido: "Sakamoto3",
+          correo: "anthony3@correo.com",
+          ingresos: 45070,
+          activo: "Si"
         }
       ];
     },
