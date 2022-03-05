@@ -18,6 +18,7 @@
                     :title="'Ingresos de la semana'"
                     :width="200"
                     :height="250"
+                    :position="'relative'"
                     :chart-data="datacollection[0]"
                   />
                 </div>
