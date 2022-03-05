@@ -53,9 +53,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" md="6">
-          <dataTable />
-        </v-col>
+        <v-col cols="12" md="6"> </v-col>
       </v-row>
     </v-container>
   </div>
