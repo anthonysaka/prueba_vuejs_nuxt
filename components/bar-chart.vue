@@ -52,8 +52,8 @@ export default {
         legend: {
           display: false
         },
-        responsive: true,
-        maintainAspectRatio: false
+        responsive: false,
+        maintainAspectRatio: true
       }
     };
   },
