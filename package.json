@@ -5,7 +5,7 @@
   "author": "Nuxt.js Team",
   "private": true,
   "scripts": {
-    "dev": "MINIMAL=1 CSB=1 nuxt",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -14,8 +14,10 @@
   "dependencies": {
     "@nuxt/http": "^0.3.0",
     "@nuxtjs/vuetify": "1.11.0",
+    "chart.js": "^2.9.4",
     "nuxt": "2.12.2",
-    "reqlim": "^0.0.0"
+    "reqlim": "^0.0.0",
+    "vue-chartjs": "^3.5.1"
   },
   "keywords": []
 }
