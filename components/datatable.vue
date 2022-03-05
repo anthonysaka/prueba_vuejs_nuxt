@@ -126,15 +126,15 @@ export default {
     editedIndex: -1,
     editedItem: {
       name: "",
-      apellido: 0,
-      correo: 0,
+      apellido: "",
+      correo: "",
       ingresos: 0,
       activo: "Si"
     },
     defaultItem: {
       name: "",
-      apellido: 0,
-      correo: 0,
+      apellido: "",
+      correo: "",
       ingresos: 0,
       activo: "Si"
     }
