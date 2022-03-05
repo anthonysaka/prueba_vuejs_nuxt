@@ -54,9 +54,7 @@
         </v-col>
 
         <v-col cols="12" md="6">
-          <v-row justify="center">
-            <dataTable />
-          </v-row>
+          <dataTable />
         </v-col>
       </v-row>
     </v-container>
@@ -67,14 +65,12 @@
 import barChart from "../components/bar-chart";
 import lineChart from "../components/line-chart";
 import dataTable from "../components/datatable";
-import sparklineLine from "../components/sparkline-line";
 
 export default {
   components: {
     barChart,
     lineChart,
-    dataTable,
-    sparklineLine
+    dataTable
   },
   data() {
     return {
