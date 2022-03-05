@@ -53,7 +53,11 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" md="6"> </v-col>
+        <v-col cols="12" md="6">
+          <client-only>
+            <dataTable />
+          </client-only>
+        </v-col>
       </v-row>
     </v-container>
   </div>
